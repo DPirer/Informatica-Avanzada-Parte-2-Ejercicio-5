@@ -52,9 +52,10 @@ void palindromo(vector<tipo_dato> v){
     // Como los iteradores dependen de una plantilla, es decir, del tipo de dato, hay que usar typename
     typename vector <tipo_dato> :: iterator it, rit;
 
+    // Vamos comparando los elementos y en el momento en el que no son iguales, ponemos la bandera a false
     rit = v.end() - 1;
     for (it = v.begin(); it < rit; it++){
-        if(*it != *rit){ // Vamos comparando los elementos y en el momento en el que no son iguales, ponemos la bandera a false
+        if(*it != *rit){ 
             flag = false;
             break;
         }
